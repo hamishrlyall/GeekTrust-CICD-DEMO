@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>geektrust</AssemblyName>
+    <Nullable>disable</Nullable>
+    <StartupObject>GeekTrust.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="sample_input\input1.txt" />
+    <None Remove="sample_input\input2.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="sample_input\input1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sample_input\input2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
